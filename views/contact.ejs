@@ -1,0 +1,34 @@
+<html>
+  <head>
+      <style>
+          body{
+            background-color: red;
+
+          }
+          h1{
+            font-family: verdana;
+            align: center;
+          }
+          html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+      </style>
+  </head>
+  <body>
+    <% include partial/_viewPartial.ejs %>
+    <h1> Welcome to  <%= data.content %> </h1>
+    <h2><% data.arr.forEach(function(item){ %>
+        <%= item %>
+    <% }) %></h2>
+  </body>
+</html>

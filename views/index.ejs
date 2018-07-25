@@ -1,0 +1,33 @@
+<html>
+  <head>
+      <style>
+          body{
+            background-color: red;
+
+          }
+          h1{
+            font-family: verdana;
+            align: center;
+          }
+          html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+      </style>
+  </head>
+  <body>
+    <% include partial/_viewPartial.ejs %>
+    <h1> Welcome to HTML Page No. <%= id%></h1>
+    <h2> Age : <span> <%= data.age%> </span> </h2>
+    <h2> Place : <span> <%= data.Place%> </span> </h2>
+  </body>
+</html>
